@@ -12,4 +12,5 @@ RUN apk --update add --virtual build-dependencies wget ca-certificates && \
     rm -rf /etc/ssl && \
     rm -rf /var/cache/apk/*
 
+ENV PATH "$PATH:/opt/elixir-$ELIXIR_VERSION/bin"
 CMD ["/bin/sh"]
